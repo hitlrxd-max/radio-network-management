@@ -7,7 +7,15 @@
 .dark-shell { --background:#0d1624; --foreground:#edf3fa; --card:#131f2e; --card-foreground:#edf3fa; --line:#243346; --muted:#8c9caf; --accent:#5b9aff; --accent-soft:#162c4d; --success:#42c78a; --success-soft:#12392d; --warning:#e8ac4a; --warning-soft:#3c2b12; --danger:#ef7777; --danger-soft:#3e2024; --purple:#a991e4; }
 * { box-sizing:border-box; border-color:var(--line); }
 html { background:var(--background); }
-body { margin:0; background:var(--background); color:var(--foreground); font-family:Arial, Helvetica, sans-serif; font-size:13px; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:Arial, Tahoma, sans-serif; font-size:13px; }
+[dir="rtl"] .sidebar { border-right:0; border-left:1px solid var(--line); }
+[dir="rtl"] .nav-item, [dir="rtl"] th { text-align:right; }
+[dir="rtl"] .workspace svg { margin-left:0; margin-right:auto; }
+[dir="rtl"] .top-profile { padding-left:0; padding-right:10px; border-left:0; border-right:1px solid var(--line); }
+[dir="rtl"] .chart-y { left:auto; right:-35px; }
+[dir="rtl"] .chart-wrap { margin-left:18px; margin-right:43px; }
+[dir="rtl"] .connected-badge { margin-left:0; margin-right:auto; }
+[dir="rtl"] .notice { text-align:right; }
 button, input, select { font:inherit; }
 button { cursor:pointer; }
 .app-shell { display:flex; min-height:100vh; background:var(--background); color:var(--foreground); }
