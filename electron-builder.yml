@@ -1,0 +1,14 @@
+appId: com.radiocore.network
+productName: RadioCore
+files:
+  - .next/**
+  - electron/**
+  - public/**
+  - package.json
+asar: true
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage

@@ -8,6 +8,10 @@
 * { box-sizing:border-box; border-color:var(--line); }
 html { background:var(--background); }
 body { margin:0; background:var(--background); color:var(--foreground); font-family:Arial, Tahoma, sans-serif; font-size:13px; }
+.local-link-card { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:14px 16px; margin-bottom:18px; border:1px solid var(--line); background:var(--card); border-radius:10px; }
+.local-link-card strong, .local-link-card small { display:block; margin-top:4px; }
+.local-link-card small { color:var(--muted); }
+.warning-dot { background:#f0b74a !important; box-shadow:0 0 0 4px rgba(240,183,74,.12) !important; }
 [dir="rtl"] .sidebar { border-right:0; border-left:1px solid var(--line); }
 [dir="rtl"] .nav-item, [dir="rtl"] th { text-align:right; }
 [dir="rtl"] .workspace svg { margin-left:0; margin-right:auto; }
